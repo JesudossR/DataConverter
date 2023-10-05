@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Size Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Data Size Converter</h2>
+    <!-- <label for="size">Enter Size:</label> -->
+    <input type="number" id="size" placeholder="Enter size" min="0">
+    <label for="fromUnit">From</label>
+    <select id="fromUnit">
+      <optgroup label="Binary">
+        <option value="bit">Bits (bit)</option>
+        <option value="B">Bytes (B)</option>
+        <option value="Kib">Kibibytes (KiB)</option>
+        <option value="Mib">Mebibytes (MiB)</option>
+        <option value="Gib">Gibibytes (GiB)</option>
+        <option value="Tib">Tebibytes (TiB)</option>
+        <option value="Pib">Pebibytes (PiB)</option>
+        <option value="Eib">Exbibytes (EiB)</option>
+        <option value="Zib">Zebibytes (ZiB)</option>
+        <option value="Yib">Yobibytes (YiB)</option>
+        <option value="Kibit">Kibibits (Kib)</option>
+        <option value="Mibit">Mebibits (Mib)</option>
+        <option value="Gibit">Gibibits (Gib)</option>
+        <option value="Tibit">Tebibits (Tib)</option>
+        <option value="Pibit">Pebibits (Pib)</option>
+        <option value="Eibit">Exbibits (Eib)</option>
+        <option value="Zibit">Zebibits (Zib)</option>
+        <option value="Yibit">Yobibits (Yib)</option>
+      </optgroup>
+      <optgroup label="Decimal">
+        <option value="B">Bytes (B)</option>
+      <option value="KB">Kilobytes (KB)</option>
+      <option value="MB">Megabytes (MB)</option>
+      <option value="GB">Gigabytes (GB)</option>
+      <option value="TB">Terabytes (TB)</option>
+        <option value="Pb">Petabytes (PB)</option>
+        <option value="Eb">Exabytes (EB)</option>
+        <option value="Zb">Zettabytes (ZB)</option>
+        <option value="Yb">Yottabytes (YB)</option>
+        <option value="Kb">Kilobits (Kb)</option>
+        <option value="Mb">Megabits (Mb)</option>
+        <option value="Gb">Gigabits (Gb)</option>
+        <option value="Tb">Terabits (Tb)</option>
+        <option value="Pb">Petabits (Pb)</option>
+        <option value="Eb">Exabits (Eb)</option>
+        <option value="Zb">Zettabits (Zb)</option>
+        <option value="Yb">Yottabits (Yb)</option>
+      </optgroup>
+    </select>
+    <label for="toUnit">To</label>
+    <select id="toUnit">
+      <optgroup label="Binary">
+        <option value="bit">Bits (bit)</option>
+        <option value="B">Bytes (B)</option>
+        <option value="Kib">Kibibytes (KiB)</option>
+        <option value="Mib">Mebibytes (MiB)</option>
+        <option value="Gib">Gibibytes (GiB)</option>
+        <option value="Tib">Tebibytes (TiB)</option>
+        <option value="Pib">Pebibytes (PiB)</option>
+        <option value="Eib">Exbibytes (EiB)</option>
+        <option value="Zib">Zebibytes (ZiB)</option>
+        <option value="Yib">Yobibytes (YiB)</option>
+        <option value="Kibit">Kibibits (Kib)</option>
+        <option value="Mibit">Mebibits (Mib)</option>
+        <option value="Gibit">Gibibits (Gib)</option>
+        <option value="Tibit">Tebibits (Tib)</option>
+        <option value="Pibit">Pebibits (Pib)</option>
+        <option value="Eibit">Exbibits (Eib)</option>
+        <option value="Zibit">Zebibits (Zib)</option>
+        <option value="Yibit">Yobibits (Yib)</option>
+      </optgroup>
+      <optgroup label="Decimal">
+        <option value="B">Bytes (B)</option>
+        <option value="KB">Kilobytes (KB)</option>
+        <option value="MB">Megabytes (MB)</option>
+        <option value="GB">Gigabytes (GB)</option>
+        <option value="TB">Terabytes (TB)</option>
+        <option value="PB">Petabytes (PB)</option>
+        <option value="EB">Exabytes (EB)</option>
+        <option value="ZB">Zettabytes (ZB)</option>
+        <option value="YB">Yottabytes (YB)</option>
+        <option value="Kb">Kilobits (Kb)</option>
+        <option value="Mb">Megabits (Mb)</option>
+        <option value="Gb">Gigabits (Gb)</option>
+        <option value="Tb">Terabits (Tb)</option>
+        <option value="Pb">Petabits (Pb)</option>
+        <option value="Eb">Exabits (Eb)</option>
+        <option value="Zb">Zettabits (Zb)</option>
+        <option value="Yb">Yottabits (Yb)</option>
+      </optgroup>
+    </select>
+    <button onclick="convertDataSize()">Convert</button>
+    <div id="result"></div>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
